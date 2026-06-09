@@ -32,4 +32,4 @@ To get a local copy up and running, follow these simple steps:
 - Utilizing third-party APIs for video data
 
 ## Improvements
-Implementing of account system that will allow users to make subscriptions and receive personalized recommendations based on their history of watched videos and channels they followed, which will be done after completing of Back-end course
+Implementing of account system that will allow users to make subscriptions and receive personalized recommendations based on their history of watched videos and channels they followed
