@@ -13,6 +13,8 @@ const Navbar = () => {
   const { setSidebar, input, setInput } = useApp();
   const nav = useNavigate();
 
+  const handleSearch = () => nav('/search');
+
   return (
     <nav className='flex-div'>
       <div className='nav-left flex-div'>
@@ -21,8 +23,8 @@ const Navbar = () => {
       </div>
       <div className='nav-middle flex-div'>
         <div className='search-box flex-div'>
-          <input type='text' placeholder='Search' onChange={(e) => setInput(e.target.value)} value={input} />
-          <img src={search_icon} alt='Search' onClick={() => nav('/search')} />
+          <input type='text' placeholder='Search' onChange={(e) => setInput(e.target.value)} value={input} onKeyDown={(e) => e.key === 'Enter' && handleSearch()} />
+          <img src={search_icon} alt='Search' onClick={handleSearch} />
         </div>
       </div>
       <div className='nav-right flex-div'>
